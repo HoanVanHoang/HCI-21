@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarView"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/backhisstorywork"
+        android:layout_toRightOf="@+id/backhisstorywork"
+        android:text="Nhấp vào chọn ngày để xem lịch sử ngày hôm đó." />
+
+    <ImageButton
+        android:id="@+id/backhisstorywork"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginBottom="19dp"
+        android:background="@android:color/holo_blue_bright"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+</RelativeLayout>

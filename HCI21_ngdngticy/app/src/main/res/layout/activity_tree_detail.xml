@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/logo" />
+
+    <ImageButton
+        android:id="@+id/backdetailtree"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4"
+        android:background="@android:color/holo_blue_bright"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@mipmap/treesimple" />
+
+    <ProgressBar
+        android:id="@+id/progressgrow"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#00fff2"
+        android:max="100"
+        android:min="0"
+        android:secondaryProgress="50" />
+
+    <Button
+        android:id="@+id/grow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/information"
+        android:layout_alignRight="@+id/information"
+        android:layout_below="@+id/progressgrow"
+        android:layout_marginTop="44dp"
+        android:text="Bắt đầu tưới" />
+
+    <Button
+        android:id="@+id/die"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/grow"
+        android:layout_alignBottom="@+id/grow"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp"
+        android:layout_toEndOf="@+id/grow"
+        android:layout_toRightOf="@+id/grow"
+        android:text="Đánh dấu cây đã chết" />
+
+    <Button
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressgrow"
+        android:layout_alignStart="@+id/progressgrow"
+        android:layout_below="@+id/die"
+        android:layout_marginTop="26dp"
+        android:text="Thông tin cây" />
+
+    <Button
+        android:id="@+id/nearest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/information"
+        android:text="Cây cần tưới gần nhất" />
+</RelativeLayout>

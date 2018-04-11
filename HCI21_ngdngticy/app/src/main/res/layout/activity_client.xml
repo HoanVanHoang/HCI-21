@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/findroad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Tìm đường" />
+
+    <Button
+        android:id="@+id/informa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/worktime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:text="Thông tin cá nhân" />
+
+    <Button
+        android:id="@+id/worktime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/findroad"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/findroad"
+        android:layout_marginBottom="61dp"
+        android:text="Lịch làm việc" />
+
+    <ImageButton
+        android:id="@+id/backclient"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/imageView20"
+        android:layout_marginBottom="28dp"
+        android:layout_toLeftOf="@+id/imageView20"
+        android:layout_toStartOf="@+id/imageView20"
+        android:background="@android:color/holo_blue_bright"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+</RelativeLayout>
